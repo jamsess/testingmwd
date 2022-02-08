@@ -1,0 +1,155 @@
+{
+  "name": "testingmwd",
+  "description": "nada",
+  "version": "0.1.0",
+  "readme_url": "https://example.com/README.md",
+  "changelog_url": "https://example.com/CHANGELOG.md",
+  "capabilities": {
+    "asset_purchase_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_change_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_suspend_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_resume_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_cancel_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed",
+      "scheduled",
+      "revoking",
+      "revoked"
+    ],
+    "asset_adjustment_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "asset_purchase_request_validation": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "asset_change_request_validation": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "tier_config_setup_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "tier_config_change_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "tier_config_adjustment_request_processing": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "tier_config_setup_request_validation": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "tier_config_change_request_validation": [
+      "draft",
+      "tiers_setup",
+      "pending",
+      "inquiring",
+      "approved",
+      "failed"
+    ],
+    "listing_new_request_processing": [
+      "draft",
+      "reviewing",
+      "deploying",
+      "canceled",
+      "completed"
+    ],
+    "listing_remove_request_processing": [
+      "draft",
+      "reviewing",
+      "deploying",
+      "canceled",
+      "completed"
+    ],
+    "usage_file_request_processing": [
+      "draft",
+      "uploading",
+      "uploaded",
+      "invalid",
+      "processing",
+      "processed",
+      "ready",
+      "rejected",
+      "pending",
+      "accepted",
+      "closed"
+    ]
+  }
+}

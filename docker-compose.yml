@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  testingmwd_dev:
+    container_name: testingmwd_dev
+    image: cloudblueconnect/connect-extension-runner:24.4
+    command: cextrun -d
+    volumes: 
+      - .:/extension
+    env_file:
+      - .testingmwd_dev.env
+
+  testingmwd_bash:
+    container_name: testingmwd_bash
+    image: cloudblueconnect/connect-extension-runner:24.5
+    working_dir: /extension
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/extension
+    env_file:
+      - .testingmwd_dev.env
+
+  testingmwd_test:
+    container_name: testingmwd_test
+    image: cloudblueconnect/connect-extension-runner:24.5
+    working_dir: /extension
+    command: /bin/bash -c "poetry install && pytest --verbose --cov=mwdextension --cov-report=html --cov-report=term-missing:skip-covered"
+    volumes:
+      - .:/extension
+    env_file:
+      - .testingmwd_dev.env
